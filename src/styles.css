@@ -1,0 +1,55 @@
+:root{
+ --button-color: rgba(200,50,230,1);
+ --button-color-hover: rgba(250,50,250,0.8);
+ --button-color-active: rgba(200,100,200,0.7);
+ --border-color: rgba(170,35,230,1);
+ --border-color-hover: rgba(150,85,230,1);
+} 
+
+html,
+body,
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+button {
+  background-color: var(--button-color);
+  border: 5px solid var(--border-color);
+  color: white;
+  margin: 0 0.5em;
+  padding: 1em;
+  outline: none;
+}
+  button:hover {
+    transition: 0.3s;
+    background-color: var(--button-color-hover);
+    border: 5px solid var(--border-color-hover);
+  }
+  button:active {
+    transition: 0.3s;
+    background-color: var(--button-color-active);
+  }
+
+
+.Counters {
+  display: flex;
+}
+
+.Counter {
+  border: 5px solid var(--button-color-hover);
+  font-weight: 700;
+  margin: 2em auto;
+  padding: 2em;
+  width: 400px;
+}
+
+.count {
+  font-size: 8em;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
